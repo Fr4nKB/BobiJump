@@ -1,0 +1,353 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+.bg {
+    background-color:#424242
+}
+
+.character {
+    width : 70px;
+    height : 70px;
+    position : relative;
+    transform: scaleX(1);
+    z-index: 3;
+    display: block;
+    transition: left ease 0.1s;
+}
+
+#playground {
+    width : 500px;
+    height : 900px;
+    margin: 0px;
+    padding : 0px;
+    position: relative;
+    display: block;
+    background-Color: #2f2b53;
+}
+
+#startbtn, #resumebtn {
+    width: 100px;
+    height: 100px;
+    margin-top: 435px;
+    margin-left: 200px;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+}
+
+.centered {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.textcentered {
+    text-align: center;
+    font-size: 25pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar li {
+    float: left;
+}
+
+.platform {
+    width: 110px;
+    height: 55px;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    margin: 0;
+}
+
+.hidden {
+    display : none;
+}
+
+.verticalborder {
+    width: 900px;
+    height: 100px;
+    position: relative;
+    z-index: 100;
+    padding: 0px;
+    background-color:#424242;
+}
+
+.top {
+    height: 25px;
+}
+
+.container {
+    position: relative;
+    background-color:#424242;
+    z-index:500;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 2px;
+    background-color:#222222;
+    border-radius: 5px;
+    z-index: 500;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navbar.left {
+    float: left;
+}
+
+.navbar.right {
+    float: right;
+}
+
+.navbar li {
+    list-style-type: none;
+    margin-top: 0.1em;
+    overflow: hidden;
+}
+
+.navbar li a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: lighter;
+    display: block;
+    color: rgb(120, 120, 120);
+    font-size: 12pt;
+}
+
+#welcome {
+    color: white;
+}
+
+.navbar li a:hover {
+    color: white;
+}
+
+.website {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 13pt;
+}
+
+.score {
+    color: white;
+    font-size: 1em;
+    z-index: 1000;
+    position: relative;
+    margin-left: 0px;
+}
+
+#scoreDS1 {
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 70px;
+    font-size: 30pt;
+    text-align: center;
+}
+
+#scoreDS2 {
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 105px;
+    font-size: 18pt;
+    text-align: center;
+}
+
+#pausebtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    z-index: 1000;
+}
+
+#skinLib {
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.skin img {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    position: relative;
+}
+
+#deathscreen {
+    height: 500px;
+    width: 450px;
+    position: absolute;
+    margin-top: 65px;
+    z-index: 500;
+}
+
+#login {
+    margin-left: 36%;
+	position: absolute;
+	width: 20%;
+	margin-top: 5%;
+	text-align: center;
+	color: white;
+	background-color: rgba(100, 100, 100, 0.4);
+	padding: 3%;
+	border-radius: 5px;
+}
+
+#login label {
+    text-align: center;
+}
+
+#login input {
+    padding: 3px;
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+#login input:focus {
+    box-shadow: 0px 0px 15px 1px rgb(255, 0, 157);
+}
+
+#loginbtn {
+    margin-top: 5%;
+}
+
+#cover {
+    width : 500px;
+    height : 900px;
+    margin: 0px;
+    padding : 0px;
+    position: absolute;
+    display: block;
+    z-index: 0;
+    opacity: 0.5;
+    background-color: grey;
+}
+
+#mostUsed {
+    display: block;
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+}
+
+.fontcolor {
+    color: white;
+}
+
+#username {
+    font-size: 40pt;
+    margin-left: 10px;
+}
+
+.fontsizeP {
+    font-size: 12pt;
+}
+
+#scoreboard {
+    border-collapse: collapse;
+    width: 75%;
+}
+
+#highlight {
+    background-color: rgba(255, 0, 157, 0.6) !important;
+}
+  
+#scoreboard td, #scoreboard th {
+    border: 1px solid rgb(120, 120, 120);
+    text-align: center;
+    padding: 8px;
+}
+
+#scoreboard tr {
+    background-color: rgb(85, 85, 85);
+}
+  
+#scoreboard tr:nth-child(even){
+    background-color: rgb(110, 110, 110);
+}
+
+.posizione {
+    width: 10%;
+}
+  
+#scoreboard th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #222222;
+    color: white;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 1s;
+    opacity: 0;
+}
+
+.powerup {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    margin: 0;
+}
+
+#instructions {
+    text-align: center;
+    font-size: 14pt;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: justify;
+    word-break: keep-all;
+}
+
+.backgroundstart {
+    background-image: url('../images/wallpaper.gif');
+}
+
+.backgroundend {
+    background-image: url('../images/deathscreen.gif');
+}
